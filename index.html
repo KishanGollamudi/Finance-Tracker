@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeigeLedger</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              beige: {
+                50: '#FDFBF9',
+                100: '#F8F4EF', // Background
+                200: '#EFE6DA',
+                300: '#E5D8C5',
+                400: '#DBC9B0',
+                500: '#C9A66B', // Accent Gold
+                600: '#A88A58',
+                700: '#7C5A3A', // Dark Accent
+                800: '#5E432B',
+                900: '#3F2D1D',
+              },
+              muted: '#6B6B6B',
+            },
+            fontFamily: {
+              sans: ['Poppins', 'Inter', 'sans-serif'],
+              script: ['Alex Brush', 'cursive'],
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F8F4EF;
+        font-family: 'Poppins', sans-serif;
+        color: #7C5A3A;
+      }
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #F8F4EF; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #DBC9B0; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #C9A66B; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.559.0",
+    "react-markdown": "https://esm.sh/react-markdown@^10.1.0",
+    "recharts": "https://esm.sh/recharts@^3.5.1",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
